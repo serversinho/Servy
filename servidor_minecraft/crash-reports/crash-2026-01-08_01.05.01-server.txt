@@ -1,0 +1,151 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2026-01-08 01:05:01
+Description: Exception in server tick loop
+
+java.lang.NoSuchMethodError: 'net.minecraft.resources.ResourceLocation net.minecraft.resources.ResourceLocation.parse(java.lang.String)'
+	at com.tiviacz.travelersbackpack.inventory.upgrades.FilterSettingsBase.lambda$reloadItemTags$0(FilterSettingsBase.java:66) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+	at com.tiviacz.travelersbackpack.inventory.upgrades.FilterSettingsBase.reloadItemTags(FilterSettingsBase.java:65) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.upgrades.FilterSettingsBase.<init>(FilterSettingsBase.java:35) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.upgrades.pickup.AutoPickupFilterSettings.<init>(AutoPickupFilterSettings.java:34) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.upgrades.pickup.AutoPickupUpgrade.createFilterSettings(AutoPickupUpgrade.java:33) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading,pl:runtimedistcleaner:A}
+	at com.tiviacz.travelersbackpack.inventory.upgrades.pickup.AutoPickupUpgrade.createFilterSettings(AutoPickupUpgrade.java:20) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading,pl:runtimedistcleaner:A}
+	at com.tiviacz.travelersbackpack.inventory.upgrades.FilterUpgradeBase.<init>(FilterUpgradeBase.java:31) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.upgrades.pickup.AutoPickupUpgrade.<init>(AutoPickupUpgrade.java:22) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading,pl:runtimedistcleaner:A}
+	at com.tiviacz.travelersbackpack.items.upgrades.PickupUpgradeItem.lambda$getUpgrade$0(PickupUpgradeItem.java:38) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.UpgradeManager.applyUpgrade(UpgradeManager.java:110) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.UpgradeManager.initializeUpgrades(UpgradeManager.java:76) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.UpgradeManager.<init>(UpgradeManager.java:29) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.BackpackWrapper.<init>(BackpackWrapper.java:118) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.BackpackWrapper.<init>(BackpackWrapper.java:86) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.BackpackWrapper.<init>(BackpackWrapper.java:81) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.inventory.BackpackContainer.m_7208_(BackpackContainer.java:42) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at net.minecraftforge.network.NetworkHooks.openScreen(NetworkHooks.java:204) ~[forge-1.20.1-47.3.7-universal.jar%23204!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:core.NetworkHooksMixin,pl:mixin:A}
+	at com.tiviacz.travelersbackpack.inventory.BackpackContainer.openBackpack(BackpackContainer.java:68) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading}
+	at com.tiviacz.travelersbackpack.items.TravelersBackpackItem.m_7203_(TravelersBackpackItem.java:132) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading,pl:runtimedistcleaner:A}
+	at com.tiviacz.travelersbackpack.items.TravelersBackpackItem.m_6225_(TravelersBackpackItem.java:146) ~[travelersbackpack-forge-1.20.1-9.1.46.jar%23190!/:forge-1.20.1-9.1.46] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:585) ~[forge-1.20.1-47.3.7-universal.jar%23204!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.faster_ingredients.ForgeHooksMixin,pl:mixin:APP:tombstone.mixins.json:ForgeHooksMixin,pl:mixin:A}
+	at net.minecraft.world.item.ItemStack.m_41661_(ItemStack.java:245) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:itemstack,re:classloading,pl:accesstransformer:B,xf:fml:forge:itemstack,pl:mixin:APP:uniquedungeons.mixin.json:ItemStackMixin,pl:mixin:APP:tombstone.mixins.json:ItemStackMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerPlayerGameMode.m_7179_(ServerPlayerGameMode.java:358) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_6371_(ServerGamePacketListenerImpl.java:1055) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:graveyard-common.mixins.json:ServerPlayNetworkHandlerMixin,pl:mixin:APP:modernfix-forge.mixins.json:bugfix.forge_vehicle_packets.ServerGamePacketListenerImplMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.server.ServerGamePacketListenerImplMixin,pl:mixin:APP:securitycraft.mixins.json:passcode.ServerGamePacketListenerImplMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.server.ServerGamePacketListenerImplMixin,pl:mixin:A}
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:34) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:classloading}
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:8) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:classloading}
+	at net.minecraft.network.protocol.PacketUtils.m_263899_(PacketUtils.java:22) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:classloading}
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:156) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,re:computing_frames,re:classloading}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:770) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:161) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:130) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_129961_(MinecraftServer.java:753) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_7245_(MinecraftServer.java:747) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:139) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.mixinextras$bridge$m_18701_$248(MinecraftServer.java) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.wrapOperation$zbn000$managedBlock(MinecraftServer.java:1856) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130012_(MinecraftServer.java:733) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:665) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23199!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (amd64) version 6.8.0-1030-azure
+	Java Version: 17.0.17, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 1077436712 bytes (1027 MiB) / 2147483648 bytes (2048 MiB) up to 12884901888 bytes (12288 MiB)
+	CPUs: 4
+	JVM Flags: 2 total; -Xms2G -Xmx12G
+	Server Running: true
+	Player Count: 1 / 15; [ServerPlayer['aguchitoo'/1135, l='ServerLevel[world]', x=69.64, y=64.00, z=-367.09]]
+	Data Packs: vanilla, mod:uniquedungeons, mod:treechop (incompatible), mod:kuma_api, mod:geckolib, mod:jei, mod:graveyard (incompatible), mod:uppers, mod:reap, mod:waystones, mod:clumps (incompatible), mod:xaeroworldmap (incompatible), mod:modernfix (incompatible), mod:citadel (incompatible), mod:alexsmobs (incompatible), mod:travelersbackpack, mod:artifacts, mod:mixinextras (incompatible), mod:beautifiedchatserver, mod:pickupnotifier, mod:morehitboxes (incompatible), mod:balm, mod:interaction_boxes, mod:crafttweaker (incompatible), mod:puzzlesaccessapi, mod:cloth_config (incompatible), mod:forge, mod:twilightforest, mod:tlskincape (incompatible), mod:embeddium, mod:betterpingdisplay (incompatible), mod:tconstruct (incompatible), mod:borninconfiguration (incompatible), mod:terrablender, mod:mousetweaks, mod:jade (incompatible), mod:tbsfbsp, mod:creativecore, mod:chunky (incompatible), mod:born_in_chaos_v1, mod:spark (incompatible), mod:kotlinforforge (incompatible), mod:curios (incompatible), mod:mantle (incompatible), mod:xaerominimap (incompatible), mod:collective, mod:securitycraft, mod:tombstone, mod:architectury (incompatible), mod:fossil (incompatible), mod:ferritecore (incompatible), mod:puzzleslib, mod:observable (incompatible), mod:expandability (incompatible), mod:moblassos, mod:playerrevive
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.11.0
+		javafml@null
+		lowcodefml@null
+	Mod List: 
+		uniquedungeons-0.70.5-74.2.0.jar                  |Unique Dungeons               |uniquedungeons                |0.70.5              |DONE      |Manifest: NOSIGNATURE
+		TreeChop-1.20.1-forge-0.19.0-fixed.jar            |HT's TreeChop                 |treechop                      |0.19.0              |DONE      |Manifest: NOSIGNATURE
+		kuma-api-forge-20.1.12+1.20.1.jar                 |KumaAPI                       |kuma_api                      |20.1.12             |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.8.2.jar                   |GeckoLib 4                    |geckolib                      |4.8.2               |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.20.0.112.jar                  |Just Enough Items             |jei                           |15.20.0.112         |DONE      |Manifest: NOSIGNATURE
+		The_Graveyard_3.1_(FORGE)_for_1.20.1.jar          |The Graveyard                 |graveyard                     |3.1                 |DONE      |Manifest: NOSIGNATURE
+		Uppers-1.0.1.jar                                  |Uppers                        |uppers                        |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		reap-1.20.1-1.0.2.jar                             |Reap Mod                      |reap                          |1.20.1-1.0.2        |DONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.20.1-14.1.17.jar                |Waystones                     |waystones                     |14.1.17             |DONE      |Manifest: NOSIGNATURE
+		Clumps-forge-1.20.1-12.0.0.4.jar                  |Clumps                        |clumps                        |12.0.0.4            |DONE      |Manifest: NOSIGNATURE
+		XaerosWorldMap_1.39.12_Forge_1.20.jar             |Xaero's World Map             |xaeroworldmap                 |1.39.12             |DONE      |Manifest: NOSIGNATURE
+		modernfix-forge-5.25.1+mc1.20.1.jar               |ModernFix                     |modernfix                     |5.25.1+mc1.20.1     |DONE      |Manifest: NOSIGNATURE
+		citadel-2.6.2-1.20.1.jar                          |Citadel                       |citadel                       |2.6.2               |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.22.9.jar                              |Alex's Mobs                   |alexsmobs                     |1.22.9              |DONE      |Manifest: NOSIGNATURE
+		travelersbackpack-forge-1.20.1-9.1.46.jar         |Traveler's Backpack           |travelersbackpack             |9.1.46              |DONE      |Manifest: NOSIGNATURE
+		artifacts-forge-9.5.16.jar                        |Artifacts                     |artifacts                     |9.5.16              |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.5.0-beta.5.jar                |MixinExtras                   |mixinextras                   |0.5.0-beta.5        |DONE      |Manifest: NOSIGNATURE
+		beautifiedchatserver-1.20.1-2.7.jar               |Beautified Chat Server        |beautifiedchatserver          |2.7                 |DONE      |Manifest: NOSIGNATURE
+		PickUpNotifier-v8.0.0-1.20.1-Forge.jar            |Pick Up Notifier              |pickupnotifier                |8.0.0               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		morehitboxes-forge-1.20.1-1.9.2.jar               |morehitboxes                  |morehitboxes                  |1.9.2               |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.3.37-all.jar                  |Balm                          |balm                          |7.3.37              |DONE      |Manifest: NOSIGNATURE
+		interaction_boxes-0.693.jar                       |Interaction Boxes             |interaction_boxes             |0.693               |DONE      |Manifest: NOSIGNATURE
+		CraftTweaker-forge-1.20.1-14.0.59.jar             |CraftTweaker                  |crafttweaker                  |14.0.59             |DONE      |Manifest: NOSIGNATURE
+		puzzlesaccessapi-forge-20.1.1.jar                 |Puzzles Access Api            |puzzlesaccessapi              |20.1.1              |DONE      |Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.3.7-universal.jar                 |Forge                         |forge                         |47.3.7              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		twilightforest-1.20.1-4.3.2508-universal.jar      |The Twilight Forest           |twilightforest                |4.3.2508            |DONE      |Manifest: NOSIGNATURE
+		tl_skin_cape_forge_1.20-1.38.jar                  |TLSkinCape                    |tlskincape                    |1.38                |DONE      |Manifest: ef:fe:e7:59:91:bb:3a:06:c1:94:f4:f3:9c:3e:26:69:47:fa:2e:c5:53:d3:38:21:65:cc:04:75:e7:61:19:40
+		embeddium-0.3.31+mc1.20.1.jar                     |Embeddium                     |embeddium                     |0.3.31+mc1.20.1     |DONE      |Manifest: NOSIGNATURE
+		BetterPingDisplay-1.20.1-1.1.jar                  |Better Ping Display           |betterpingdisplay             |1.1                 |DONE      |Manifest: NOSIGNATURE
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		TConstruct-1.20.1-3.10.2.92.jar                   |Tinkers' Construct            |tconstruct                    |3.10.2.92           |DONE      |Manifest: NOSIGNATURE
+		borninconfiguration-3.1.2-all.jar                 |BornInConfiguration           |borninconfiguration           |3.1.2               |DONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.20.1-3.0.1.10.jar            |TerraBlender                  |terrablender                  |3.0.1.10            |DONE      |Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.20.1-2.25.1.jar             |Mouse Tweaks                  |mousetweaks                   |2.25.1              |DONE      |Manifest: NOSIGNATURE
+		Jade-1.20.1-Forge-11.13.2.jar                     |Jade                          |jade                          |11.13.2+forge       |DONE      |Manifest: NOSIGNATURE
+		tbsfbsp-0.74.jar                                  |tbsfbsp                       |tbsfbsp                       |0.74                |DONE      |Manifest: NOSIGNATURE
+		CreativeCore_FORGE_v2.12.32_mc1.20.1.jar          |CreativeCore                  |creativecore                  |2.12.32             |DONE      |Manifest: NOSIGNATURE
+		Chunky-1.3.146.jar                                |Chunky                        |chunky                        |1.3.146             |DONE      |Manifest: NOSIGNATURE
+		born_in_chaos_[Forge]1.20.1_1.7.3.jar             |Born in Chaos                 |born_in_chaos_v1              |1.7.3               |DONE      |Manifest: NOSIGNATURE
+		spark-1.10.53-forge.jar                           |spark                         |spark                         |1.10.53             |DONE      |Manifest: NOSIGNATURE
+		kffmod-4.11.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.11.0              |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1.jar                    |Curios API                    |curios                        |5.14.1+1.20.1       |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.20.1-1.11.79.jar                         |Mantle                        |mantle                        |1.11.79             |DONE      |Manifest: NOSIGNATURE
+		Xaeros_Minimap_25.2.10_Forge_1.20.jar             |Xaero's Minimap               |xaerominimap                  |25.2.10             |DONE      |Manifest: NOSIGNATURE
+		collective-1.20.1-8.13.jar                        |Collective                    |collective                    |8.13                |DONE      |Manifest: NOSIGNATURE
+		[1.20.1] SecurityCraft v1.10.1.jar                |SecurityCraft                 |securitycraft                 |1.10.1              |DONE      |Manifest: NOSIGNATURE
+		tombstone-1.20.1-9.0.9.jar                        |Corail Tombstone              |tombstone                     |9.0.9               |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge (1).jar                 |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		fossil-forge-1.20.1-9.3.0.2.jar                   |Fossils and Archeology: Reviva|fossil                        |9.3.0.2             |DONE      |Manifest: NOSIGNATURE
+		ferritecore-6.0.1-forge.jar                       |Ferrite Core                  |ferritecore                   |6.0.1               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		PuzzlesLib-v8.1.33-1.20.1-Forge.jar               |Puzzles Lib                   |puzzleslib                    |8.1.33              |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		observable-4.4.1.jar                              |Observable                    |observable                    |4.4.1               |DONE      |Manifest: NOSIGNATURE
+		expandability-forge-9.0.4.jar                     |ExpandAbility                 |expandability                 |9.0.4               |DONE      |Manifest: NOSIGNATURE
+		MobLassos-v8.0.1-1.20.1-Forge.jar                 |Mob Lassos                    |moblassos                     |8.0.1               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		PlayerRevive_FORGE_v2.0.31_mc1.20.1.jar           |PlayerRevive                  |playerrevive                  |2.0.31              |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 0d464310-9079-45e7-8fe5-ddd94a211717
+	FML: 47.3
+	Forge: net.minecraftforge:47.3.7

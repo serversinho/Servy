@@ -1,0 +1,67 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "caslu",
+      "uniqueId": "d68c8e9e-394d-37c6-9710-a218d4ba9113"
+    },
+    "time": 1767033798293,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/F8aIHoLQNy"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "caslu",
+      "uniqueId": "d68c8e9e-394d-37c6-9710-a218d4ba9113"
+    },
+    "time": 1765408059266,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/hvzQzAgGvO"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "caslu",
+      "uniqueId": "d68c8e9e-394d-37c6-9710-a218d4ba9113"
+    },
+    "time": 1765408002642,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/lH231QVIV0"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "caslu",
+      "uniqueId": "d68c8e9e-394d-37c6-9710-a218d4ba9113"
+    },
+    "time": 1764712747925,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/hmNIXiREFR"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "caslu",
+      "uniqueId": "d68c8e9e-394d-37c6-9710-a218d4ba9113"
+    },
+    "time": 1764712602347,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/CDIvuEN05O"
+    }
+  }
+]
